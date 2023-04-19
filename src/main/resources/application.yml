@@ -7,5 +7,5 @@ server:
 spring:
   mvc:
     view:
-      prefix: /WEB-INF/blog/
+      prefix: /WEB-INF/ublog/
       suffix: .jsp

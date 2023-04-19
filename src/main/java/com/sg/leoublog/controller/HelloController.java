@@ -1,6 +1,7 @@
 package com.sg.leoublog.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
@@ -15,5 +16,12 @@ public class HelloController {
 	public String img() {
 		System.out.println("이미지파일이 요청됨");
 		return "redirect:img/graph.png";
+	}
+	
+	@GetMapping("/jsp")
+	public String jsp(Model model) {
+		System.out.println("JSP 파일이 요청됨 hellocontroller");
+		model.addAttribute("username", "흐흠 이 콘텐츠주인: 이용희");
+		return "hellojsp";
 	}
 }
