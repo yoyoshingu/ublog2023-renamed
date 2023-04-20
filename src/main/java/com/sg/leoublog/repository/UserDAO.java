@@ -10,23 +10,23 @@ import com.sg.leoublog.domain.User;
 
 @Repository
 public class UserDAO {
-	@Autowired
-	private SqlSessionTemplate mybatis;
-	
-	public void insertUser(User user) {
-		mybatis.insert("insertUser", user);
-	}
-	public void updateUser(User user) {
-		mybatis.update("updateUser", user);
-	}
-	public void deleteUser(User user) {
-		mybatis.delete("deleteUser", user);
-	}
-	public User getuser(User user) {
-		return mybatis.selectOne("getUser", user);
-	}
-	
-	public List<User> getUserList() {
-		return mybatis.selectList("getUserList");
-	}
+//	@Autowired
+//	private SqlSessionTemplate mybatis;
+//	
+//	public void insertUser(User user) {
+//		mybatis.insert("insertUser", user);
+//	}
+//	public void updateUser(User user) {
+//		mybatis.update("updateUser", user);
+//	}
+//	public void deleteUser(User user) {
+//		mybatis.delete("deleteUser", user);
+//	}
+//	public User getuser(User user) {
+//		return mybatis.selectOne("getUser", user);
+//	}
+//	
+//	public List<User> getUserList() {
+//		return mybatis.selectList("getUserList");
+//	}
 }
