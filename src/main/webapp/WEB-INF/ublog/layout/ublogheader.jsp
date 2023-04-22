@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,10 +24,10 @@
     <div class="collapse navbar-collapse" id="mynavbar">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">로그인</a>
+          <a class="nav-link" href="/auth/login">로그인</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">회원가입</a>
+          <a class="nav-link" href="/auth/insertUser">회원가입</a>
         </li>
 
       </ul>

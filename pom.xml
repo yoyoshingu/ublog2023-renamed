@@ -54,13 +54,16 @@
 		</dependency>
 		
 		
-		<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+		<!-- https://mvnrepository.com/artifact/javax.servlet/jstl 
 	<dependency>
 	<groupId>javax.servlet</groupId>
 	<artifactId>jstl</artifactId>
 	<version>1.2</version>
+		</dependency>
+	-->
+	
 
-	</dependency>
+
 	<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jasper -->
 	<dependency>
 		<groupId>org.apache.tomcat.embed</groupId>
@@ -73,9 +76,32 @@
     <artifactId>jquery</artifactId>
     <version>3.5.1</version>
 </dependency>
+
+
+<!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
+<dependency>
+    <groupId>jakarta.servlet</groupId>
+    <artifactId>jakarta.servlet-api</artifactId>
+
+    <scope>provided</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api -->
+<dependency>
+    <groupId>jakarta.servlet.jsp.jstl</groupId>
+    <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.glassfish.web/jakarta.servlet.jsp.jstl -->
+<dependency>
+    <groupId>org.glassfish.web</groupId>
+    <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+
+</dependency>
+
 		
 
-	</dependencies>
+	</dependencies><!--$NO-MVN-MAN-VER$-->
 
 	<build>
 		<plugins>
